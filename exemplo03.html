@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="portugues">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC202 Exemplo</title>
+    <link rel="stylesheet" href = "estilo.css">
+    <style>
+        main>article {
+            display: grid; 
+            place-items: center;
+        }
+
+        ul {
+            list-style: nome;
+            padding: 50;
+            margin: 50;
+        }
+        ul > li {
+            border: lpx solid green;
+            background-color: lightgreen;
+        }
+
+        .desc-pancake {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            list-style: nome;
+            margin: 0;
+            padding: 0;
+        }
+
+        .desc-pancake > * {
+            border: 1px solid green; 
+            background-color: lightgreen;
+            flex: 1 1 150px;
+            min-height: 80px;
+        }
+        
+        .sidebar-says {
+            display: grid;
+            grid-template-columns: minmax(20%, 200px) 80%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+        <main>
+        <article class = "sidebar-says"> 
+            <section>
+                <ul class="desc-pancake"> 
+                    <li> jogo </li>
+                    <li> celular </li>
+                    <l1> filme </l1>
+                </ul>
+            </section>
+            <section>
+                Teste para usar o section nesse 
+                exeplo novo 
+                de css.
+                
+            </section>
+           
+        </article>
+    </main>
+</body>
+</html>
